@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    driver-class-name: liquibase.ext.neo4j.database.jdbc.Neo4jDriver
+    url: jdbc:neo4j:bolt://localhost:7687
+    username: neo4j
+    password: letmein!
+
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.xml
